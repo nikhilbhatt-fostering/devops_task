@@ -1,7 +1,8 @@
 version: "3.9"
+
 services:
   php:
-    build: .
+    image: laravel-app:latest  # ✅ use Jenkins-built image
     container_name: php_app
     volumes:
       - ./app:/var/www/html
